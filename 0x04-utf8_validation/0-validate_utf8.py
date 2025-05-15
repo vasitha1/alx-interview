@@ -1,12 +1,17 @@
 #!/usr/bin/python3
+"""
+Determines if a given data set represents a valid UTF-8 encoding
+"""
+
 
 def validUTF8(data):
+    """ function checks a list of intergers"""
     n = len(data)
     i = 0
 
     while i < n:
         byte = data[i]
-        # Determine the number of bytes in this character based on the first byte
+        # Determine the number of bytes in this character based on first byte
         if byte & 0b10000000 == 0:
             # 1-byte character
             length = 1
