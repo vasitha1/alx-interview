@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 def validUTF8(data):
     n = len(data)
     i = 0
