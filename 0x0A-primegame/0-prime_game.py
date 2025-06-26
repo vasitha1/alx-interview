@@ -1,6 +1,7 @@
-
 #!/usr/bin/python3
-"""Module for Prime Game"""
+"""
+Module for Prime Game
+"""
 
 
 def isWinner(x, nums):
@@ -78,4 +79,3 @@ def rm_multiples(ls, x):
             ls[i * x] = 0
         except (ValueError, IndexError):
             break
-
